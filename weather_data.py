@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
+#accessing laredo,Texeas Weather Data
 page = requests.get('http://forecast.weather.gov/MapClick.php?lat=27.5064&lon=-99.5075#.WPuHmfkrLIU')
 response = page.content
 #print(page.status_code) # printing status Code
